@@ -1,0 +1,74 @@
+/* ------------------------------------------------------ */
+/* BIG TABLET TO 1200px(WIDTH SMALLER THAT THE 1140px row */
+/* ------------------------------------------------------ */
+
+@media (max-width: 1200px) {
+  #modal {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  #modal img {
+    max-height: auto;
+    width: 57.5% !important;
+  }
+}
+
+/* ----------------------------------------------- */
+/* SMALL TABLET TO BIG TABLET: 767px TO 1023px */
+/* ----------------------------------------------- */
+
+@media (max-width: 1023px) {
+  .user-image img {
+    width: 175px;
+    height: 175px;
+  }
+  #modal img {
+    max-height: auto !important;
+    width: 77% !important;
+  }
+  #modal {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* ----------------------------------------------- */
+/* SMALL PHONES TO SMALL TABLETS: 481px TO 767px */
+/* ----------------------------------------------- */
+
+@media (max-width: 767px) {
+  #modal {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  #modal img {
+    max-height: auto !important;
+    width: 85% !important;
+  }
+  .user-image img {
+    width: 165px;
+    height: 165px;
+  }
+}
+
+/* ----------------------------------------------- */
+/* SMALL PHONES: 0px TO 480px */
+/* ----------------------------------------------- */
+
+@media (max-width: 480px) {
+  #modal img {
+    max-height: auto;
+    width: 100% !important;
+  }
+
+  #modal {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .user-image img {
+    width: 150px;
+    height: 150px;
+  }
+}
