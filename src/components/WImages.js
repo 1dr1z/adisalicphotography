@@ -7,13 +7,11 @@ export class WImages extends Component {
       <React.Fragment>
         <DataConsumer>
           {value => {
-            {
-              return (
-                <div className="images" onWheel={e => value.wheel(e)}>
-                  {value.mapImages(value.wImages)}
-                </div>
-              );
-            }
+            return (
+              <div className="images" onWheel={e => value.wheel(e)}>
+                {value.mapImages(value.wImages)}
+              </div>
+            );
           }}
         </DataConsumer>
       </React.Fragment>

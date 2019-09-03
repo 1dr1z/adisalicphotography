@@ -71,7 +71,7 @@ class DataProvider extends Component {
     });
   };
 
-  handleMenu = e => {
+  handleMenu = () => {
     const element = document.querySelector(".fas");
     element.classList.toggle("fa-times");
     if (element.classList.length === 3) {
@@ -84,6 +84,15 @@ class DataProvider extends Component {
   wheel = e => {
     document.querySelector(".images").scrollBy(e.deltaY, 0);
   };
+
+  // touchHandling = () => {
+  //   window.addEventListener("ontouchstart", () => {
+  //     document.querySelector(".menu-list").style.display = "none";
+  //   });
+  //   // window.ontouchstart = function() {
+  //   //   document.querySelector(".menu-list").style.display = "none";
+  //   // };
+  // };
 
   render() {
     return (
@@ -98,7 +107,8 @@ class DataProvider extends Component {
           closeMenu: this.closeMenu,
           copyrightsPrevent: this.copyrightsPrevent,
           modalCopyPrevent: this.modalCopyPrevent,
-          copyrightsTouchPrevent: this.copyrightsTouchPrevent
+          copyrightsTouchPrevent: this.copyrightsTouchPrevent,
+          touchHandling: this.touchHandling
         }}
       >
         {this.props.children}

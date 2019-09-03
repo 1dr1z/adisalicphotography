@@ -7,13 +7,11 @@ class ConImages extends Component {
       <React.Fragment>
         <DataConsumer>
           {value => {
-            {
-              return (
-                <div className="images" onWheel={e => value.wheel(e)}>
-                  {value.mapImages(value.conImages)}
-                </div>
-              );
-            }
+            return (
+              <div className="images" onWheel={e => value.wheel(e)}>
+                {value.mapImages(value.conImages)}
+              </div>
+            );
           }}
         </DataConsumer>
       </React.Fragment>

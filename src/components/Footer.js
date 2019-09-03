@@ -21,6 +21,7 @@ export class Footer extends Component {
                         </li>
                       );
                     }
+                    return null;
                   });
                 }}
               </DataConsumer>

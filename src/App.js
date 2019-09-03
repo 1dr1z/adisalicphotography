@@ -14,6 +14,7 @@ import Biography from "./components/Biography";
 import Contact from "./components/Contact";
 import Default from "./components/Default";
 import Modal from "./components/Modal";
+import { DataConsumer } from "./context";
 
 class App extends Component {
   componentDidMount = () => {
@@ -21,6 +22,14 @@ class App extends Component {
       if (e.keyCode === 44) {
         const text = "Ⓒ Copyright Adis Alic. All rights reserved";
         navigator.clipboard.writeText(text);
+      }
+    });
+
+    window.addEventListener("keydown", e => {
+      if (e.keyCode === 39) {
+        document.querySelector(".images").scrollBy(20, 0);
+      } else if (e.keyCode === 37) {
+        document.querySelector(".images").scrollBy(-20, 0);
       }
     });
   };

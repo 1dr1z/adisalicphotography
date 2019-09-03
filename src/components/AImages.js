@@ -7,13 +7,11 @@ class AImages extends Component {
       <React.Fragment>
         <DataConsumer>
           {value => {
-            {
-              return (
-                <div className="images" onWheel={e => value.wheel(e)}>
-                  {value.mapImages(value.aImages)}
-                </div>
-              );
-            }
+            return (
+              <div className="images" onWheel={e => value.wheel(e)}>
+                {value.mapImages(value.aImages)}
+              </div>
+            );
           }}
         </DataConsumer>
       </React.Fragment>

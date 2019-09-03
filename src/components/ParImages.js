@@ -7,13 +7,11 @@ export class ParImages extends Component {
       <React.Fragment>
         <DataConsumer>
           {value => {
-            {
-              return (
-                <div className="images" onWheel={e => value.wheel(e)}>
-                  {value.mapImages(value.adsImages)}
-                </div>
-              );
-            }
+            return (
+              <div className="images" onWheel={e => value.wheel(e)}>
+                {value.mapImages(value.adsImages)}
+              </div>
+            );
           }}
         </DataConsumer>
       </React.Fragment>

@@ -21,18 +21,16 @@ export class Navbar extends Component {
                     <div className="menu-items">
                       <div
                         className="icon-opener"
-                        onClick={e => value.handleMenu(e)}
+                        onClick={() => value.handleMenu()}
                       >
                         <i className="fas fa-bars" />
                         {/* <i className="fas fa-times"></i> */}
                       </div>
-                      <div className="menu-list">
-                        <ul
-                          className="nav-items"
-                          onClick={e => {
-                            value.handleMenu(e);
-                          }}
-                        >
+                      <div
+                        className="menu-list"
+                        onMouseLeave={() => value.handleMenu()}
+                      >
+                        <ul className="nav-items">
                           <li className="nav-item">
                             <Link to="/">Home</Link>
                           </li>
